@@ -4,15 +4,57 @@
     <meta charset="UTF-8">
     <title>Inscription en ligne</title>
 </head>
-<body>
-<h1 style="text-align: center">Inscription en ligne</h1>
-<form name="Inscrip">
-    <label>Votre nom :</label>
-    <input type="text">
-    <label>Votre prénom :</label>
-    <input type="text">
-    <label>Votre age :</label>
-    <input type="text">
+<body style="text-align: center">
+<h1>Inscription en ligne</h1>
+
+<form >
+    <fieldset>
+        <legend>Informations personnelles</legend>
+    <label for="nom">Votre nom :</label>
+    <input type="text" id="nom" placeholder="Votre nom?"><br><br>
+    <label for="prenom">Votre prénom :</label>
+    <input type="text" id="prenom" placeholder="Votre prénom?"><br><br>
+    <label for="age">Votre age :</label>
+    <input type="number" id="age" placeholder="Votre age?"><br><br>
+        <LABEL for="date">Votre date de naissance :</LABEL>
+        <input type="date" id="date"><br><br>
+    <label for="adresse">Votre adresse :</label>
+        <textarea id="adresse" placeholder="Votre adresse?" cols="30" rows="10"></textarea><br><br>
+        <label for="email">Votre email :</label>
+        <input type="text" id="email" placeholder="Votre email?"><br><br>
+        <label for="url">Votre URL :</label>
+        <input type="text" id="url" placeholder="Votre URL?"><br><br>
+    <label for="mdp">Mot de passe :</label>
+    <input type="password" id="mdp" required><br><br>
+    <label for="mdpc">Retaper votre mot de passe :</label>
+    <input type="password" id="mdpc" required><br><br>
+</fieldset>
+    <br>
+<fieldset>
+    <legend>Gestion des groupes et des options</legend>
+<label>Votre groupe:</label>
+    <label for="grp1">Groupe 1</label>
+<input type="radio" id="grp1" name="grp">
+    <label for="grp2">Groupe 2</label>
+    <input type="radio" id="grp2" name="grp">
+    <label for="grp3">Groupe 3</label>
+    <input type="radio" id="grp3" name="grp"><br><br>
+    <label for="carte">Numero de carte étudiant :</label>
+    <input type="number" id="carte"><br><br>
+    <label >Choisissez une option que vous désirez:</label>
+    <select name="option" size="5">
+        <option>J2EE</option>
+        <option>Android</option>
+        <option>.Net</option>
+        <option>HTML5</option>
+        <option>Flex</option>
+    </select>
+</fieldset>
+    <input pattern="[I][N][S][A][T][0-9]{4}" /
+    <a href="InscriptionValidee.html">
+    <input type="Submit" value="Valider" >
+    </a>
+    <input type="reset" value="Initialiser">
 </form>
 
 </body>
